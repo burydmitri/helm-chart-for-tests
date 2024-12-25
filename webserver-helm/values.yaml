@@ -1,0 +1,13 @@
+replicas: 2
+image:
+  repository: nginx
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  hostname: "argo.webserver.local"
+  path: "/"
